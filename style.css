@@ -53,7 +53,7 @@
     display: flex;
     align-items: center;
     gap: 1px;
-    padding: 1px 3px;
+    padding: 2px 3px;
     border: 1px solid var(--Color-White);
     cursor: pointer;
 }
@@ -109,6 +109,39 @@
 }
 .cta{
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.cta h1{
+    font-size: 65px;
+    font-family: var(--Font-Poppins);
+    font-weight: 500;
+}
+.cta h1 span{
+    color: var(--Color-Blue-2);
+    font-weight: 700;
+}
+.cta p{
+    width: 95%;
+    text-align: left;
+    font-size: 22px;
+    font-family: var(--Font-Commissioner);
+    font-weight: 500;
+}
+.cta button{
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    font-family: var(--Font-Roboto);
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+.cta button:hover{
+    border: 1.5px solid var(--Color-White);
+    border-radius: 3px;
+    background-color: transparent;
 }
 .log_in{
     display: flex;
@@ -172,11 +205,13 @@
 .log_in_w{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 .log_in_w h5{
     font-family: var(--Font-Inter);
     font-size: 18px;
+    color: var(--Color-Blue);
 }
 .ggle{
     align-items: center;
@@ -189,11 +224,117 @@
     cursor: pointer;
 }
 .ggle i:hover{
-    scale: (1.5);
+    font-size: 50px;
 }
-
-
 
 .sign_up{
     display: none;
+    position: absolute;
+    width: 30%;
+    background-color: var(--Color-White);
+    opacity: 0.9;
+    border-radius: 5px;
+    padding: 20px;
+    top: 25px;
+    left: 40%;
+}
+.sign_up form{
+    display: grid;
+    gap: 15px;
+}
+.sign_up form i{
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.sign_up form i:hover{
+    color: var(--Color-Yellow);
+    font-size: 30px;
+}
+.sign_up form h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--Font-Inter);
+    color: var(--Color-Black);
+    font-weight: 700;
+}
+.sign_up form input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--Color-Black);
+    outline: none;
+    color: var(--Color-Black);
+    font-weight: 500;
+    font-family: var(--Font-Roboto);
+    font-size: 17px;
+}
+.sign_up form span{
+    margin-bottom: -5px;
+    color: var(--Color-Black);
+    font-family: var(--Font-Inter);
+}
+.sign_up form button{
+    margin-top: -15px;
+    width: 100%;
+    padding: 3px 0;
+    font-family: var(--Font-Inter);
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--Color-Black);
+    border-radius: 3px;
+}
+.sign_up form button:hover{
+    background-color: var(--Color-Black);
+    color: var(--Color-White);
+}
+.sign_up_w{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.sign_up_w h5{
+    font-family: var(--Font-Inter);
+    font-size: 18px;
+    color: var(--Color-Blue);
+}
+@media screen and (max-width: 375px) {
+    .section_pd{
+        padding: 5px;
+    }
+    .container{
+        width: 100%;
+    }   
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cta{
+        width: 100%;
+    }
+    .cta h1{
+        line-height: 0.9em;
+        margin-bottom: 10px;
+    }
+    .log_in{
+        width: 90%;
+    }
+    .sign_up{
+        display: grid;
+        width: 90%;
+        left: 15px;
+    }
 }
