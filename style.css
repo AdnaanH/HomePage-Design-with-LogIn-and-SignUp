@@ -333,7 +333,7 @@
         width: 90%;
     }
     .sign_up{
-        display: grid;
+        display: none;
         width: 90%;
         left: 15px;
     }
